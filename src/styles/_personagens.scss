@@ -1,0 +1,90 @@
+.personagens {
+    padding: 5.6vw;
+    text-align: center;
+    background-color: rgb(7, 7, 7);
+}
+
+.title_personagens {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #BF0404;
+    margin-bottom: 90px;
+    text-transform: uppercase;
+}
+
+.cards_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas iguais */
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: black;
+    border: 1px solid #BF0404;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #D90416;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.card-link {
+    display: inline-block;
+    color: #D90416;
+    background-color: rgb(7, 7, 7);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.card-link:hover {
+    color: #BF0404;
+}
+
+.veja_mais {
+    margin-top: 40px;
+    text-align: center;
+    }
+
+.veja_mais_title{
+    margin-bottom: 16px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.veja_mais_link {
+    background-color: #BF0404;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}

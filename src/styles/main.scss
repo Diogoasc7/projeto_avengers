@@ -1,5 +1,37 @@
-$bgcolor: green;
+@use 'hero';
+@use 'sinopse';
+@use 'personagens';
+@use 'motivosParaVer';
+@use 'footer';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 body {
-    background-color: $bgcolor;
+    background-color: black;
+    color: white;
+}
+
+.cor1 {
+    background-color: #D90416;
+}
+
+.cor2 {
+    background-color: #BF0404;
+}
+
+.cor3 {
+    background-color: #8C0303;
+}
+
+.cor4 {
+    background-color: #590202;
+}
+
+.cor5 {
+    background-color: #0D0D0D;
 }

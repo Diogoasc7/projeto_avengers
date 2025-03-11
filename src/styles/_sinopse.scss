@@ -1,0 +1,25 @@
+.sinopse {
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.sinopse_img, .referencia_img {
+    max-width: 100%;
+}
+
+.sinopse_container, .referencia {
+    padding: 2vw;
+}
+
+.sinopse_title, .referencia_title {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #D90416;
+    margin-bottom: 24px;
+}
+
+.sinopse_paragrafo, .referencia_paragrafo {
+    color: white;
+}

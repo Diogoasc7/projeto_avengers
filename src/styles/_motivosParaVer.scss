@@ -1,0 +1,36 @@
+.motivos_h1 {
+    padding-top: 5.6vw;
+    text-transform: uppercase;
+    color: #BF0404;
+    margin-bottom: 16px;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.motivos {
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.motivos_img, .referencia_img {
+    max-width: 100%;
+    margin-bottom: 70px;
+}
+
+.motivos_container, .referencia {
+    padding: 2vw;
+}
+
+.motivos_title, .referencia_title {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #D90416;
+    margin-bottom: 24px;
+}
+
+.motivos_paragrafo, .referencia_paragrafo {
+    color: white;
+}
