@@ -1,13 +1,15 @@
+@use 'variaveis';
+
 .footer {
-    background-color: #222; /* Cor de fundo escura */
-    color: #fff; /* Texto branco */
+    background-color: rgb(14, 0, 20); 
+    color: variaveis.$corTextoSecundario;
     text-align: center;
     padding: 15px;
     font-size: 16px;
 }
 
 .footer a {
-    color: red; /* Azul para destacar o link */
+    color: variaveis.$corTextoPrincipal;
     text-decoration: none;
     font-weight: bold;
 }

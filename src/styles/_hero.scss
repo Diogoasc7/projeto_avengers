@@ -1,43 +1,45 @@
+@use 'variaveis';
+
 menu {
     position: relative;
-}
 
-.logo_menu {
-    width: 270px;
-    height: auto; 
-    max-width: 100%;
-    margin-left: 10px;
-}
+    .logo_menu {
+        width: 270px;
+        height: auto;
+        max-width: 100%;
+        margin-left: 10px;
+    }
 
+    nav {
+        background-color: variaveis.$corFundoNav;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        ul {
+            margin-right: 32px;
 
-ul {
-    margin-right: 32px;
-}
+            li {
+                display: inline-block;
+                margin: 8px;
 
-li {
-    display: inline-block;
-    margin: 8px;
-}
+                .link_menu {
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 1.3em;
+                    color: variaveis.$corBotoes;
+                    border-radius: 5px;
+                    padding: 10px;
 
-.link_menu {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.3em;
-    color: #D90416;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.link_menu.active {
-    color: #D90416;
-    background-color: black;
+                    &.active {
+                        color: variaveis.$corBotoes;
+                        background-color: variaveis.$corFundoBotoes;
+                    }
+                }
+            }
+        }
+    }
 }

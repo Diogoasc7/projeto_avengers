@@ -3,6 +3,8 @@
 @use 'personagens';
 @use 'motivosParaVer';
 @use 'footer';
+@use 'variaveis';
+
 
 * {
     margin: 0px;
@@ -12,26 +14,18 @@
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: variaveis.$corDeFundo;
+    color: variaveis.$corTextoSecundario;
 }
 
-.cor1 {
-    background-color: #D90416;
+h1, h2 {
+    font-family: "Do Hyeon", sans-serif;
 }
 
-.cor2 {
-    background-color: #BF0404;
+p {
+    font-size: 1.1em;
 }
 
-.cor3 {
-    background-color: #8C0303;
-}
-
-.cor4 {
-    background-color: #590202;
-}
-
-.cor5 {
-    background-color: #0D0D0D;
+a, p {
+    font-family: "Roboto", sans-serif;
 }
