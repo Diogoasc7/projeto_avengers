@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    
+
     &_img {
         max-width: 100%;
     }
@@ -24,14 +24,35 @@
     &_paragrafo {
         color: variaveis.$corTextoSecundario;
     }
+
+    // Responsividade
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        &_title {
+            font-size: 1.8em;
+            margin-bottom: 18px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        &_title {
+            font-size: 1.5em;
+        }
+
+        &_paragrafo {
+            font-size: 0.9em;
+        }
+
+        padding: 4vw;
+    }
 }
 
 .referencia {
     padding: 2vw;
+
     &_img {
         max-width: 100%;
     }
-
 
     &_title {
         font-size: 2.2em;
@@ -42,5 +63,24 @@
 
     &_paragrafo {
         color: variaveis.$corTextoSecundario;
+    }
+
+    
+    @media (max-width: 768px) {
+        &_title {
+            font-size: 1.8em;
+            margin-bottom: 18px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        padding: 4vw;
+        &_title {
+            font-size: 1.5em;
+        }
+
+        &_paragrafo {
+            font-size: 0.9em;
+        }
     }
 }

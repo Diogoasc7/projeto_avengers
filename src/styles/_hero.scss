@@ -21,6 +21,7 @@ menu {
 
         ul {
             margin-right: 32px;
+            display: flex;
 
             li {
                 display: inline-block;
@@ -41,5 +42,41 @@ menu {
                 }
             }
         }
+
+        // Responsividade
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
+            ul {
+                margin-right: 0;
+                display: block;
+            }
+
+            li {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+
+            .logo_menu {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            ul {
+                text-align: center;
+            }
+
+            li {
+                margin: 5px 0;
+            }
+
+            .link_menu {
+                font-size: 1.1em;
+                padding: 8px;
+            }
+        }
     }
 }
+
