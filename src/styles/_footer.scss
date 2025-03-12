@@ -1,21 +1,21 @@
 @use 'variaveis';
 
 .footer {
-    background-color: rgb(14, 0, 20); 
+    background-color: rgb(14, 0, 20);
     color: variaveis.$corTextoSecundario;
     text-align: center;
     padding: 15px;
     font-size: 16px;
-}
 
-.footer a {
-    color: variaveis.$corTextoPrincipal;
-    text-decoration: none;
-    font-weight: bold;
-}
+    a {
+        color: variaveis.$corTextoPrincipal;
+        text-decoration: none;
+        font-weight: bold;
 
-.footer a:hover {
-    text-decoration: underline;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 @media (max-width: 768px) {
